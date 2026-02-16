@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch statement</title>
+</head>
+<body>
+    <button onclick="cal()">click to calculate</button>
+    <script>
+        let cal = () => {
+            let num1 = parseInt(prompt("enter the number 1"));
+            let operator = prompt("enter the operator");
+            let num2 = parseInt(prompt("enter the number 2"));
+            let result = "";
+            switch(operator){
+                case "+":
+                  result = num1 + num2;
+                  break;
+                case "-":
+                  result = num1 - num2;
+                  break;
+                case "*":
+                  result = num1 * num2;
+                  break;
+                case "/":
+                  result = num1 / num2;
+                  break;
+            }
+            document.write(result);
+        }
+    </script>
+</body>
+</html>
